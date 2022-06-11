@@ -16,3 +16,4 @@ a, b = map(int, sys.stdin.readline().split())
 for i in range(a, b+1):
     if isprime(i):
         print(i)
+
