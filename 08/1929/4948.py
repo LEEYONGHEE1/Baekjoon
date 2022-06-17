@@ -12,7 +12,7 @@ def isprime(num):
             if i%j == 0:
                 pass
         result.append(i)
-    return len(result)
+    return result
     
 while(1):
     user_input = int(input())
