@@ -1,24 +1,26 @@
-from cgitb import reset
-from cmath import sqrt
+def sosu(n):
+    if n ==1:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True							
 
-def isprime(num):
- 
-    for i in range(num+1 , num*2+1):
-        result = []
-        sqr = int(i**(1/2))+1
-        if num == 1:
-            pass
-        for j in range(2,sqr):
-            if i%j == 0:
-                pass
-        result.append(i)
-    return result
-    
-while(1):
-    user_input = int(input())
-    if(user_input == 0):
-        break
-    else:
-        a = isprime(user_input)
-        if isprime:
-            print(a)
+all_list = list(range(2,246912))		
+memo = []								
+
+for i in all_list:						
+    if sosu(i):							
+        memo.append(i)					
+
+n = int(input())
+
+while True:
+    count=0					
+    if n == 0 :
+            break
+    for i in memo:			
+        if n < i <=2*n:		
+            count+=1		
+    print(count)
+    n = int(input())
