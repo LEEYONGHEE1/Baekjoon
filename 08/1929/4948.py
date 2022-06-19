@@ -18,9 +18,10 @@ n = int(input())
 while True:
     count=0					
     if n == 0 :
-            break
+        break
     for i in memo:			
         if n < i <=2*n:		
             count+=1		
     print(count)
     n = int(input())
+
