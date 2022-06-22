@@ -28,17 +28,17 @@ user_count = int(input())
 for i in range(user_count):
     user_number = int(input())
     suso(user_number)
-    for i in user_result:
-        for k in user_result:
-            if(i>k):
-                if(i + k == user_number):
-                    hap.append(i)
-                    hap.append(k)
-            else:
-                break
     if(int(user_number / 2) in user_result):
         print(f"{int(user_number/2)} {int(user_number/2)}")
     else:
+        for i in user_result:
+            for k in user_result:
+                if(i>k):
+                    if(i + k == user_number):
+                        hap.append(i)
+                        hap.append(k)
+                else:
+                    break
         print(f"{hap[1]} {hap[0]}")
     user_result = []
     hap = []
