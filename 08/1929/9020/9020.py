@@ -23,7 +23,7 @@ for i in range(1,10001):
     if isprime(i):
         result.append(i)
 
-user_count = int(input())
+user_count = int(input()) 
 
 for i in range(user_count):
     user_number = int(input())
@@ -38,7 +38,7 @@ for i in range(user_count):
                         hap.append(i)
                         hap.append(k)
                 else:
-                    break
+                    break 
         print(f"{hap[1]} {hap[0]}")
     user_result = []
     hap = []
