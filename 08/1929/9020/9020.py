@@ -23,7 +23,7 @@ for i in range(1,10001):
     if isprime(i):
         result.append(i)
 
-user_count = int(input())  
+user_count = int(input())   
 
 for i in range(user_count):
     user_number = int(input())
