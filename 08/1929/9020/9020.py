@@ -26,6 +26,7 @@ for i in range(1,10001):
 user_count = int(input())   
 
 for i in range(user_count):
+    count = 0
     user_number = int(input())
     suso(user_number)
     if(int(user_number / 2) in user_result):
@@ -37,6 +38,7 @@ for i in range(user_count):
                     if(i + k == user_number):
                         hap.append(i)
                         hap.append(k)
+                        break
                 else:
                     break 
         print(f"{hap[1]} {hap[0]}")
