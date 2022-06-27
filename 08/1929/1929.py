@@ -9,7 +9,7 @@ def isprime(num):
     for j in range(2,sqr):
         if num%j == 0:
             return False
-    return True
+    return True 
 
 a, b = map(int, sys.stdin.readline().split())
 
