@@ -15,7 +15,7 @@ if(int(a) > 18):
             break
         else:
             res = 0
-            hap = 0
+            hap = 0 
 
 else:
     for i in range(1, int(a) + 1):
