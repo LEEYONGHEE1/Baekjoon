@@ -1,13 +1,5 @@
-number = []
-
-a = int(input())
-for i in range(a):
-    b = int(input())
-    number.append(b)
-
-number.sort()
-
-for i in number:
-    print(i)
-
-    
+import sys
+array=[int(sys.stdin.readline().rstrip()) for i in range(int(input()))]
+array.sort()
+for i in array:
+    sys.stdout.write(str(i)+'\n') 
