@@ -7,5 +7,5 @@ def divide(s):
         res += i
     return res
 
-print(divide(a))
+print(divide(a)) 
 
