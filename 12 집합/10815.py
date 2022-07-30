@@ -13,6 +13,6 @@ for i in b2:
     if dict.get(i):
         print(1, end=' ')
     else:
-        print(0, end=' ')
+        print(0, end=' ') 
 
 
