@@ -1,25 +1,18 @@
 hearX , seeX = map(int, input().split())
 
-arr1 = [] # hearX
-arr2 = [] # seeX
-result = []
-
-count = 0
+arr1 = set() # hearX
+arr2 = set() # seeX
 
 for i in range(hearX):
-    arr1.append(input())
+    arr1.add(input())
 
 for i in range(seeX):
-    arr2.append(input())
+    arr2.add(input())
 
-for i in arr1:
-    if(i in arr2):
-        count += 1
-        result.append(i)
+arr3 =sorted(list(arr1 & arr2))
 
-
-result.sort()
-
-print(count)
-for i in result:
+print(len(arr3))
+for i in arr3:
     print(i)
+
+# 집합을 이용해 풀자
