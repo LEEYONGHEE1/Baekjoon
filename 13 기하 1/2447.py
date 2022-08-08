@@ -12,6 +12,7 @@ for i in range(6):
 ymax = []
 xmax = []
 
+# 큰 사각형의 면적
 for i in range(6):
     if(distance[i][0] == 3 or distance[i][0] == 4):
         ymax.append(distance[i][1])
@@ -23,16 +24,13 @@ rect_area_x = max(xmax)
 
 rect_area = rect_area_x * rect_area_y
 
-count = 0
-
+# 작은 사각형의 면적
 for i in range(6):
-    if(distance[i][1] == rect_area_x):
-        sub_rectY = abs(distance[i+1][1] - distance[i-1][1])
-        count+=1 
-        if(count == 2):
-            sub_rectX = abs(distance[i+1][1] - distance[i-1][1])
+    if(distance[i][1] == rect_area_x ):
+        sub_rectY = abs(distance[(i+1)%6][1]  - distance[(i-1)%6][1])
+        rect_area_x = 0
     elif(distance[i][1] == rect_area_y):
-        sub_rectX = abs(distance[i+1][1] - distance[i-1][1])
+        sub_rectX = abs(distance[(i+1)%6][1]  - distance[(i-1)%6][1])
 
 sub_rect = sub_rectX * sub_rectY
 
