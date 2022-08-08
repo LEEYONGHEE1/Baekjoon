@@ -1,5 +1,4 @@
 import sys
-from this import d
 
 number = int(input())
 
@@ -24,19 +23,18 @@ rect_area_x = max(xmax)
 
 rect_area = rect_area_x * rect_area_y
 
-
-for i in range(3):
-    if (max(ymax) > ymax[i]):
-        a = ymax[i]
-        break
-    elif (max(xmax) > xmax[i]):
-        a = xmax[i]
-        break
+count = 0
 
 for i in range(6):
-    if(distance[i][1] == a):
-        sub_rect = distance[i+1][1] * distance[i+2][1]
-        break
+    if(distance[i][1] == rect_area_x):
+        sub_rectY = abs(distance[i+1][1] - distance[i-1][1])
+        count+=1 
+        if(count == 2):
+            sub_rectX = abs(distance[i+1][1] - distance[i-1][1])
+    elif(distance[i][1] == rect_area_y):
+        sub_rectX = abs(distance[i+1][1] - distance[i-1][1])
+
+sub_rect = sub_rectX * sub_rectY
 
 total_area = rect_area - sub_rect
 
