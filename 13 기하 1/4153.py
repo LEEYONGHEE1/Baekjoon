@@ -5,7 +5,7 @@ res = []
 
 while 1:
     a, b, c = map(int, input().split())
-    if(a + b + c == 0):
+    if(a+b+c == 0):
         break
     else:
         so = [a,b,c]
