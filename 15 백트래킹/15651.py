@@ -1,15 +1,14 @@
-a, b = map(int, input().split())
-
-s= []
-
-def dfs3():
-    if(len(s) == b):
+n,m= map(int,input().split())
+ 
+s = []
+ 
+def dfs():
+    if len(s)==m:
         print(' '.join(map(str,s)))
         return
-    for i in range(1, a+1):
+    
+    for i in range(1,n+1):
         s.append(i)
-        dfs3()
+        dfs()
         s.pop()
-      
-
-dfs3()
+dfs()
