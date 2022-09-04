@@ -4,7 +4,7 @@ s= []
 
 def dfs2(n):
     if(len(s) == b):
-        print(' '.join(map(str,s)))
+        print(' '.join(map(str, s)))
         return
     for i in range(n, a+1):
         if i not in s:
