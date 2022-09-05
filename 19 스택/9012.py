@@ -1,7 +1,3 @@
-from ast import Break
-from inspect import stack
-
-
 a = int(input())
 
 stack = []
