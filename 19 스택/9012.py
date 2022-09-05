@@ -1,9 +1,8 @@
 a = int(input())
 
-stack = []
 for _ in range(a):
     b = input()
-    stack.append(b)
+    stack = list(b)
     sum = 0
 
     for i in stack:
