@@ -1,26 +1,31 @@
 while 1:
+    stack = []
     b = input()
     if(b == "."):
         break
-    stack = list(b)
-    sum = 0
-    sum2 = 0
 
-    for i in stack:
+
+    for i in b:
         if i == "(":
-            sum += 1
+            stack.append(i)
         elif i == ")":
-            sum -= 1
+            if(len(stack) != 0 and stack[-1] == "("):
+                stack.pop()
+            else:
+                stack.append(")")
+                break
         elif i == "[":
-            sum2 += 1
+            stack.append(i)
         elif i == "]":
-            sum2 -= 1
-        if sum < 0 or sum2 < 0:
-            print("no")
-            break
-    
-    if sum > 0 or sum2 > 0:
-        print("no")
-    elif sum == 0 or sum2 == 0:
+            if(len(stack) != 0 and stack[-1] == "["):
+                stack.pop()
+            else:
+                stack.append("]")
+                break
+
+    if len(stack) == 0:
         print("yes")
+    else:
+        print("no")
+    
     
