@@ -10,16 +10,16 @@ for _ in range(n):
     num = int(input())
     while count <= num:
         stack.append(count)
-        su.append("+")
+        su.append('+')
         count += 1
     if(stack[-1] == num):
         stack.pop()
-        su.append("-")
+        su.append('-')
     else:
         state = False
         
 if not state:
-    print("NO")
+    print('NO')
 else:
     for i in su:
         print(i)
