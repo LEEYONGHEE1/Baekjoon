@@ -1,7 +1,7 @@
 a = int(input())
 b = 2
 
-while True:
+while 1:
     if (a == 1 or a == 2):
         print(a)
         break
