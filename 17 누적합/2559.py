@@ -21,7 +21,7 @@ arr = list(map(int, input().split()))
 # print(max(result))
 
 result2 = []
-result2.append(sum(arr[ :k]))
+result2.append(sum(arr[:k]))
 
 print(result2)
 
