@@ -14,4 +14,4 @@ def fib2(n):
     return cnt2
 
 n=int(input())
-print(fib(n), fib2(n))
+print(fib(n),fib2(n))
