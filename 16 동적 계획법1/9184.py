@@ -15,7 +15,7 @@ def w(a, b, c):
 dp = [[[0] *  21 for _ in range(21)] for _ in range(21)]
 
 while True:
-    a, b, c = map(int,input().split())
+    a, b, c = map(int, input().split())
     if a == b == c == -1:
         break
     print(f'w({a}, {b}, {c}) = {w(a,b,c)}')
