@@ -3,7 +3,7 @@ people = []
 
 for _ in range(n): 
     x, y = map(int, input().split())
-    people.append((x, y))
+    people.append((x,y))
 
 for i in people:
     rank = 1 
