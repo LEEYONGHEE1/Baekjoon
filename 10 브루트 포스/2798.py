@@ -6,7 +6,7 @@ count, max_number = map(int, input().split())
 number = list(map(int, input().split()))
 
 for i in range(count):
-    for j in range(i+1,count):
+    for j in range(i+1, count):
         for k in range(j+1, count):
             hap = number[i] + number[j] + number[k]
             if hap <= max_number:
