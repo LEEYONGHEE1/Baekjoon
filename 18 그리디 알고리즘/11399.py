@@ -3,7 +3,7 @@ import sys
 input = sys.stdin.readline
 
 test_num = int(input())
-user = list(map(int, nput().split()))
+user = list(map(int,input().split()))
 
 hap = 0
 result_time = 0
