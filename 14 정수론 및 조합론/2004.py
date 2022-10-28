@@ -14,4 +14,4 @@ def five(n):
         five += n
     return five
 
-print(min(two(n) - two(n - m) - two(m), five(n) - five(n - m) - five(m)))
+print(min(two(n) - two(n-m) - two(m), five(n) - five(n - m) - five(m)))
