@@ -1,12 +1,21 @@
-def star(n):
-    for x in range(1,n+1):
-        for y in range(1,n+1):
-            if(x == n/3+1 and y == n/3+1):
-                print(" ",end ='')
-            else:
-                print("*" ,end ='')
-        print()
-    star()
-    
+n = int(input())
 
-star(9) 
+def star(k):
+    if k == 3:
+        return ['***','* *','***']
+
+    arr = star(k//3)
+    stars = []
+
+    for i in arr:
+        stars.append(i*3)
+
+    for i in arr:
+        stars.append(i+' '*(k//3)+i)
+
+    for i in arr:
+        stars.append(i*3)
+
+    return stars
+
+print('\n'.join(star(n)))
