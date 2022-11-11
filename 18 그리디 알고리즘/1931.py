@@ -18,7 +18,7 @@ room = sorted(room, key=lambda a:a[1])
 for i in range(test_number):
     if(room[i][0] >= last_time):
         last_time = room[i][1]
-        count += 1
+        count +=1
     
 print(count)
 
