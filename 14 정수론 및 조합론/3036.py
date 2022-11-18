@@ -9,4 +9,4 @@ n = int(input())
 radius = list(map(int, input().split()))
 for i in range(1, n):
     c = chg(radius[0], radius[i])
-    print(f'{radius[0]//c} / {radius[i]//c}')
+    print(f'{radius[0]//c}/{radius[i]//c}')
