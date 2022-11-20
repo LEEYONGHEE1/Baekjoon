@@ -9,7 +9,6 @@ while start <= end:
     line = 0 
     for i in len:
         line += i // mid 
-        
     if line >= b:
         start = mid + 1
     else:
