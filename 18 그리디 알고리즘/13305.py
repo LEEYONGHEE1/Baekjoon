@@ -1,4 +1,5 @@
 import sys
+
 input = sys.stdin.readline
 
 N = int(input())
@@ -12,7 +13,8 @@ min_cost = costs[0]
 
 for i in range(1, N-1):
   if min_cost > costs[i]: 
-    min_cost = costs[i] 
+    min_cost = costs[i]
+  
   min_price += min_cost * roads[i]
 
 print(min_price)
