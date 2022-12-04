@@ -4,8 +4,8 @@ input = sys.stdin.readline
 
 N = int(input())
 
-roads = list(map(int,input().split()))
-costs = list(map(int,input().split()))
+roads = list(map(int, input().split()))
+costs = list(map(int, input().split()))
 
 min_price = roads[0] * costs[0]
 
