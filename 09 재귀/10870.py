@@ -1,5 +1,5 @@
 a = int(input())
-pbn = [0, 1]
+pbn = [0,1]
 count = 0
 hap = 0
 while(count <=18):
