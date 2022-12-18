@@ -1,6 +1,8 @@
 n = int(input())
+
 s = [0 for i in range(301)]
 dp = [0 for i in range(301)]
+
 for i in range(n):
     s[i] = int(input())
 dp[0] = s[0]
