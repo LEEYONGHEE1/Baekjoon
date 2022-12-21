@@ -7,7 +7,7 @@ heap = []
 for _ in range(numbers):
     num = int(sys.stdin.readline())
     if num != 0:
-        heapq.heappush(heap, (-num))
+        heapq.heappush(heap,(-num))
     else:
         try:
             print(-1 * heapq.heappop(heap))
