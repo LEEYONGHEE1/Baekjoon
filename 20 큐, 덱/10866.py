@@ -4,7 +4,7 @@ import sys
 d = deque()
 n = int(input())
 
-for i in range( n):
+for i in range(n):
     command = sys.stdin.readline().split()
 
     if command[0] == "push_front":
