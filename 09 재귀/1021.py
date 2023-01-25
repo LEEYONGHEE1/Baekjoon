@@ -9,7 +9,7 @@ index = list(map(int,input().split()))
 count = 0
 for num in index:
     while 1:
-        if data[0] == num:
+        if data[0] ==num:
             data.popleft()
             break
         else:
