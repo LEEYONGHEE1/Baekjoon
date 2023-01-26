@@ -2,7 +2,7 @@ from collections import deque
 
 n,m = map(int, input().split())
 
-data = deque([i for i in range(1,n+1)])
+data = deque([i for i in range(1,  n+1)])
 
 index = list(map(int,input().split()))
 
