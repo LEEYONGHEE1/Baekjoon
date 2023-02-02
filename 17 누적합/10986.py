@@ -3,7 +3,7 @@ import sys
 input =sys.stdin.readline
 
 n, m = map(int, input().split()) 
-num = list(map(int,  input().split())) + [0]  
+num = list(map(int, input().split())) + [0]  
 r = [0] * m  
 
 for i in range(n):
