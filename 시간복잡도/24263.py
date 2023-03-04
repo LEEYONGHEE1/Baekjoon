@@ -4,4 +4,4 @@ def time(n):
     
 if __name__ == "__main__":
     n = input()
-    time(n =n)
+    time(n=n)
