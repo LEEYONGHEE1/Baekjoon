@@ -6,4 +6,4 @@ for _ in range(m):
     i,j=map(int, input().strip().split())
     arr=arr[0:i-1]+arr[i-1:j][::-1]+arr[j:]
     
-print(" ".join(str(e) for e in arr))
+print(" ".join(str(e) for e in  arr))
